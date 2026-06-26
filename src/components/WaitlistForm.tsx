@@ -19,7 +19,7 @@ function LaunchOffer() {
         🎁 Lanzamiento exclusivo
       </span>
       <p className="mx-auto max-w-[280px] text-sm leading-relaxed text-muted-foreground lg:mx-0 lg:max-w-sm">
-        🎁 Los primeros 1.000 usuarios recibirán un regalo exclusivo de Claria
+        Los primeros 1.000 usuarios recibirán un regalo exclusivo de Claria
         Premium cuando hagamos el lanzamiento oficial.
       </p>
     </div>

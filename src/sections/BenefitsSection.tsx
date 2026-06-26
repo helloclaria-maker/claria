@@ -12,13 +12,13 @@ export function BenefitsSection() {
       <SectionBackdrop src={walletImg} />
 
       <Container className="relative z-10">
-        <div className="max-w-xl lg:max-w-2xl">
+        <div className="max-w-xl lg:max-w-full">
           <FadeIn>
             <Badge className="mb-5">La visión</Badge>
           </FadeIn>
 
           <FadeIn delay={0.05}>
-            <h2 className="heading-section text-pretty text-[1.75rem] text-foreground sm:text-3xl lg:max-w-3xl lg:text-[2.5rem]">
+            <h2 className="heading-section text-pretty text-[1.75rem] text-foreground sm:text-3xl lg:max-w-[85%] lg:text-[2.5rem]">
               Claria organiza todos los beneficios incluidos en los productos
               que ya pagas para que puedas encontrarlos y aprovecharlos justo
               cuando los necesites.
@@ -26,7 +26,7 @@ export function BenefitsSection() {
           </FadeIn>
 
           <FadeIn delay={0.1}>
-            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-[15px] lg:mt-5 lg:max-w-3xl">
+            <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-[15px] lg:mt-5 lg:max-w-full">
               Encuentra en segundos el WhatsApp, teléfono o correo de contacto
               de cada beneficio. Olvídate de buscar entre aplicaciones, páginas
               web o documentos cuando necesites hacer una consulta o solicitar

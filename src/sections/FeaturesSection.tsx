@@ -11,7 +11,7 @@ export function FeaturesSection() {
       <SectionBackdrop src={shoppingImg} />
 
       <Container className="relative z-10">
-        <FadeIn className="max-w-md lg:max-w-lg">
+        <FadeIn className="max-w-md lg:max-w-[85%]">
           <p className="section-label mb-4">El problema</p>
           <h2 className="heading-section text-[1.75rem] sm:text-3xl lg:text-[2.5rem]">
             Probablemente ya pagas beneficios como estos sin siquiera saber que
