@@ -1,11 +1,18 @@
+import { ClariaText } from '../components/ClariaText'
 import { Mail, ShieldCheck } from 'lucide-react'
 import { Container } from '../components/Container'
+import logoClaria from '../assets/logo-claria.png'
 
 export function FooterSection() {
   return (
     <footer className="border-t border-border bg-background">
       <Container className="flex flex-col items-center justify-between gap-5 py-14 sm:flex-row">
         <div className="flex flex-col items-center gap-2 text-center sm:items-start sm:text-left">
+          <img
+            src={logoClaria}
+            alt="Claria"
+            className="mb-1 h-[56px] w-auto"
+          />
           <div className="flex items-center gap-2.5 text-sm font-normal text-muted-foreground">
             <ShieldCheck
               className="h-4 w-4 shrink-0 text-muted-foreground"
@@ -27,7 +34,7 @@ export function FooterSection() {
           </div>
         </div>
         <div className="text-sm font-normal text-muted-foreground">
-          © {new Date().getFullYear()} Claria
+          © {new Date().getFullYear()} <ClariaText>Claria</ClariaText>
         </div>
       </Container>
     </footer>

@@ -1,3 +1,4 @@
+import { ClariaText } from '../components/ClariaText'
 import { Badge } from '../components/Badge'
 import { FadeIn } from '../components/FadeIn'
 import { ProductBenefitCard } from '../components/ProductBenefitCard'
@@ -19,9 +20,11 @@ export function BenefitsSection() {
 
           <FadeIn delay={0.05}>
             <h2 className="heading-section text-pretty text-[1.75rem] text-foreground sm:text-3xl lg:max-w-[85%] lg:text-[2.5rem]">
-              Claria organiza todos los beneficios incluidos en los productos
-              que ya pagas para que puedas encontrarlos y aprovecharlos justo
-              cuando los necesites.
+              <ClariaText>
+                Claria organiza todos los beneficios incluidos en los productos
+                que ya pagas para que puedas encontrarlos y aprovecharlos justo
+                cuando los necesites.
+              </ClariaText>
             </h2>
           </FadeIn>
 

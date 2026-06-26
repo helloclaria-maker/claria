@@ -1,3 +1,4 @@
+import { ClariaText } from '../components/ClariaText'
 import { Badge } from '../components/Badge'
 import { Container } from '../components/Container'
 import { FadeIn } from '../components/FadeIn'
@@ -31,7 +32,7 @@ export function HeroSection() {
               <p className="body-large mx-auto mt-5 max-w-[440px] lg:mx-0 lg:mt-6">
                 Tarjetas de crédito, seguros, medicina prepagada, membresías y
                 suscripciones incluyen beneficios que muchas personas nunca
-                llegan a conocer. Claria los descubre por ti.
+                llegan a conocer. <ClariaText>Claria</ClariaText> los descubre por ti.
               </p>
             </FadeIn>
 

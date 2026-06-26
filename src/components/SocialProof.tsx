@@ -1,3 +1,4 @@
+import { ClariaText } from './ClariaText'
 import { useWaitlistCount } from '../hooks/useWaitlistCount'
 
 type SocialProofProps = {
@@ -18,7 +19,7 @@ export function SocialProof({ className = '' }: SocialProofProps) {
       >
         {count.toLocaleString('es-CO')}
       </span>{' '}
-      personas que ya esperan Claria.
+      <ClariaText>personas que ya esperan Claria.</ClariaText>
     </p>
   )
 }

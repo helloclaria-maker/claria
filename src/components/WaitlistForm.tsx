@@ -1,3 +1,4 @@
+import { ClariaText } from './ClariaText'
 import { motion } from 'framer-motion'
 import { CheckCircle2, Lock } from 'lucide-react'
 import { Button } from './Button'
@@ -18,9 +19,11 @@ function LaunchOffer() {
       <span className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-card px-3.5 py-1.5 text-xs font-medium text-foreground shadow-sm">
         🎁 Lanzamiento exclusivo
       </span>
-      <p className="mx-auto max-w-[280px] text-sm leading-relaxed text-muted-foreground lg:mx-0 lg:max-w-sm">
-        Los primeros 1.000 usuarios recibirán un regalo exclusivo de Claria
-        Premium cuando hagamos el lanzamiento oficial.
+      <p className="mx-auto max-w-[280px] text-sm font-bold leading-relaxed text-muted-foreground lg:mx-0 lg:max-w-sm">
+        <ClariaText>
+          Los primeros 1.000 usuarios recibirán un regalo exclusivo de Claria
+          Premium cuando hagamos el lanzamiento oficial.
+        </ClariaText>
       </p>
     </div>
   )
@@ -57,7 +60,10 @@ export function WaitlistForm({
           ¡Estás en la lista!
         </p>
         <p className="text-sm leading-relaxed text-muted-foreground">
-          Te avisaremos cuando Claria esté lista. Gracias por confiar en nosotros.
+          <ClariaText>
+            Te avisaremos cuando Claria esté lista. Gracias por confiar en
+            nosotros.
+          </ClariaText>
         </p>
       </motion.div>
     )
@@ -78,7 +84,9 @@ export function WaitlistForm({
             Únete al acceso anticipado
           </h3>
           <p className="text-sm leading-relaxed text-muted-foreground">
-            Déjanos tu correo y te avisaremos cuando Claria esté lista.
+            <ClariaText>
+              Déjanos tu correo y te avisaremos cuando Claria esté lista.
+            </ClariaText>
           </p>
         </div>
       )}
