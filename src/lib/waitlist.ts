@@ -11,8 +11,9 @@ export type WaitlistCountResponse = {
   count: number
 }
 
-const ENDPOINT = import.meta.env.VITE_WAITLIST_ENDPOINT as string
-
+const ENDPOINT =
+  import.meta.env.VITE_WAITLIST_ENDPOINT ||
+  "https://script.google.com/macros/s/AKfycbzzlkhKKoFyDePK1Wj8tyS2YXXtcMpW6tCUQPtsSfFHOMYGwOgceEt6YtoVpIWCIqwn1w/exec"
 export const WAITLIST_DEFAULT_COUNT = 247
 
 export async function submitToWaitlist(
