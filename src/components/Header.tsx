@@ -15,10 +15,10 @@ export function Header() {
         </a>
 
         <a
-          href="#waitlist"
+          href="#business-contact"
           className="focus-ring btn-primary-gradient inline-flex h-11 items-center gap-2 rounded-xl px-5 text-sm font-semibold text-primary-foreground"
         >
-          Acceso anticipado
+          Soy empresa
           <ArrowRight className="h-4 w-4" aria-hidden="true" />
         </a>
       </Container>
