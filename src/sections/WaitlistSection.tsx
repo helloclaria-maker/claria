@@ -1,6 +1,6 @@
 import { ClariaText } from '../components/ClariaText'
 import { FadeIn } from '../components/FadeIn'
-import { WaitlistCard } from '../components/WaitlistCard'
+import { WaitlistForm } from '../components/WaitlistCard'
 import { Container } from '../components/Container'
 
 export function WaitlistSection() {
@@ -21,7 +21,7 @@ export function WaitlistSection() {
               </p>
 
               <div className="mt-8 lg:mt-10">
-                <WaitlistCard
+                <WaitlistForm
                   id="business-contact"
                   showSocialProof={false}
                 />
