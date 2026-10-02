@@ -13,13 +13,15 @@ function App() {
   return (
     <div className="min-h-svh overflow-x-hidden bg-background">
       <Header />
-      <main>
-        <HeroSection />
-        <FeaturesSection />
-        <DiscoverSection />
-        <BenefitsSection />
-        <WaitlistSection />
-      </main>
+     <main>
+  <HeroSection />
+  <FeaturesSection />
+  <ComparatorSection />
+  <NewProductsSection />
+  <DiscoverSection />
+  <BenefitsSection />
+  <WaitlistSection />
+</main>
       <FooterSection />
     </div>
   )
