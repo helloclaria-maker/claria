@@ -2,9 +2,12 @@ import { ClariaText } from '../components/ClariaText'
 import { Badge } from '../components/Badge'
 import { Container } from '../components/Container'
 import { FadeIn } from '../components/FadeIn'
-import { SocialProof } from '../components/SocialProof'
-import { WaitlistForm } from '../components/WaitlistForm'
+
 import heroIllustration from '../assets/hero-illustration.png'
+import appStoreBadge from '../assets/Descargar_en_la_App_Store_Insignia_ES_RGB_blk_100217.svg'
+
+const APP_STORE_URL =
+  'https://apps.apple.com/co/app/claria-beneficios/id6796450134'
 
 export function HeroSection() {
   return (
@@ -14,7 +17,7 @@ export function HeroSection() {
           <div className="relative z-[2] text-center lg:text-left">
             <FadeIn immediate>
               <Badge className="mb-6 lg:mb-8">
-                Acceso anticipado · Beta privada
+                Ya disponible en iOS
               </Badge>
             </FadeIn>
 
@@ -32,26 +35,38 @@ export function HeroSection() {
               <p className="body-large mx-auto mt-5 max-w-[440px] lg:mx-0 lg:mt-6">
                 Tarjetas de crédito, seguros, medicina prepagada, membresías y
                 suscripciones incluyen beneficios que muchas personas nunca
-                llegan a conocer. <ClariaText>Claria</ClariaText> los descubre por ti.
+                llegan a conocer. <ClariaText>Claria</ClariaText> los descubre
+                por ti.
               </p>
             </FadeIn>
 
             <FadeIn delay={0.15} immediate>
-              <SocialProof className="mt-6 lg:mt-8" />
-            </FadeIn>
+              <div className="mt-8 flex flex-col items-center gap-3 lg:items-start">
+                <a
+                  href={APP_STORE_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Descargar Claria en el App Store"
+                  className="inline-block transition-transform duration-200 hover:scale-[1.03]"
+                >
+                  <img
+                    src={appStoreBadge}
+                    alt="Descargar en el App Store"
+                    className="h-[52px] w-auto"
+                  />
+                </a>
 
-            <FadeIn delay={0.2} immediate className="mt-8 lg:mt-10">
-              <WaitlistForm
-                id="waitlist"
-                autoFocus
-                compact
-                layout="inline"
-                showSocialProof={false}
-              />
+                <p className="text-sm font-medium text-muted-foreground">
+                  Comparador inteligente ya disponible · Android próximamente
+                </p>
+              </div>
             </FadeIn>
           </div>
 
-          <div className="relative hidden min-h-[1px] lg:block" aria-hidden="true">
+          <div
+            className="relative hidden min-h-[1px] lg:block"
+            aria-hidden="true"
+          >
             <img
               src={heroIllustration}
               alt=""
@@ -62,7 +77,10 @@ export function HeroSection() {
           </div>
         </div>
 
-        <FadeIn immediate className="relative z-[2] mx-auto mt-12 max-w-lg lg:hidden">
+        <FadeIn
+          immediate
+          className="relative z-[2] mx-auto mt-12 max-w-lg lg:hidden"
+        >
           <img
             src={heroIllustration}
             alt=""
