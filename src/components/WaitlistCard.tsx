@@ -2,6 +2,7 @@ import { ClariaText } from './ClariaText'
 import { motion } from 'framer-motion'
 import { CheckCircle2, Lock } from 'lucide-react'
 import { Button } from './Button'
+import { SocialProof } from './SocialProof'
 import { useWaitlist } from '../hooks/useWaitlist'
 
 type WaitlistFormProps = {
@@ -94,6 +95,8 @@ export function WaitlistForm({
           </p>
         </div>
       )}
+
+      {showSocialProof && <SocialProof />}
 
       <BusinessOffer />
 
