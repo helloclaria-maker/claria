@@ -4,7 +4,7 @@ import { Container } from '../components/Container'
 import { FadeIn } from '../components/FadeIn'
 
 import heroIllustration from '../assets/hero-illustration.png'
-import appStoreBadge from '../assets/Descargar_en_la_App_Store_Insignia_ES_RGB_blk_100217.svg'
+import appStoreBadge from '../assets/Download_on_the_App_Store_Badge_ES_RGB_blk_100217.svg'
 
 const APP_STORE_URL =
   'https://apps.apple.com/co/app/claria-beneficios/id6796450134'
