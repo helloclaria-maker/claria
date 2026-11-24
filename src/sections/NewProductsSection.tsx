@@ -1,7 +1,7 @@
-import { Badge } from '../components/Badge'
-import { FadeIn } from '../components/FadeIn'
-import { Container } from '../components/Container'
 import newProductsImg from '../assets/descubre.jpeg'
+import { Badge } from '../components/Badge'
+import { Container } from '../components/Container'
+import { FadeIn } from '../components/FadeIn'
 
 export function NewProductsSection() {
   return (
@@ -19,7 +19,7 @@ export function NewProductsSection() {
           </FadeIn>
 
           <FadeIn delay={0.05} className="max-w-md lg:max-w-lg">
-            <Badge className="mb-5">Próximamente</Badge>
+            <Badge className="mb-5">Disponible en Claria</Badge>
 
             <h2 className="heading-section text-[1.75rem] sm:text-3xl lg:text-[2.5rem]">
               Descubre nuevos productos
