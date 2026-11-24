@@ -1,4 +1,4 @@
-import newProductsImg from '../assets/descubre.jpeg'
+import newProductsImg from '../assets/descubre.png'
 import { Badge } from '../components/Badge'
 import { Container } from '../components/Container'
 import { FadeIn } from '../components/FadeIn'
